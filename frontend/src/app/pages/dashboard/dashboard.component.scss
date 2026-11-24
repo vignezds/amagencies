@@ -1,0 +1,25 @@
+.page-header {
+  margin-bottom: 24px;
+
+  h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #666;
+    margin: 0;
+  }
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+mat-card {
+  height: 100%;
+  box-sizing: border-box;
+}

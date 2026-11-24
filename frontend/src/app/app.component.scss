@@ -1,0 +1,64 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-toolbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.toolbar-spacer {
+  flex: 1;
+}
+
+.app-subtitle {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.sidenav-container {
+  flex: 1;
+  min-height: 0;
+}
+
+.app-sidenav {
+  width: 240px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.main-content {
+  background: #f5f7fa;
+}
+
+.content-wrapper {
+  padding: 24px;
+}
+
+.active-link {
+  background: rgba(63, 81, 181, 0.08);
+  color: #3f51b5;
+}
+
+@media (max-width: 768px) {
+  .app-subtitle {
+    display: none;
+  }
+
+  .app-sidenav {
+    width: 220px;
+  }
+
+  .content-wrapper {
+    padding: 16px;
+  }
+}
